@@ -19,10 +19,4 @@ class ItemStore {
         
         return newItem
     }
-    
-    init() {
-        for _ in 0..<5 {
-            createItem()
-        }
-    }
 }
