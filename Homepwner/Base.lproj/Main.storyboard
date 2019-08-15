@@ -56,36 +56,36 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AST-Ws-DbS">
                                             <rect key="frame" x="16" y="11" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWI-qe-DiJ">
-                                            <rect key="frame" x="262" y="22" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4N-C9-z4q">
                                             <rect key="frame" x="16" y="39" width="31" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="PTy-ds-qtq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWI-qe-DiJ">
+                                            <rect key="frame" x="262" y="22" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="MWI-qe-DiJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="p4N-C9-z4q" secondAttribute="trailing" constant="8" symbolic="YES" id="73x-RN-O2X"/>
-                                        <constraint firstItem="MWI-qe-DiJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AST-Ws-DbS" secondAttribute="trailing" constant="8" symbolic="YES" id="C2P-wc-3ic"/>
-                                        <constraint firstItem="p4N-C9-z4q" firstAttribute="bottom" secondItem="bVg-GO-GeZ" secondAttribute="bottomMargin" id="KVE-hQ-blG"/>
+                                        <constraint firstItem="p4N-C9-z4q" firstAttribute="leading" secondItem="AST-Ws-DbS" secondAttribute="leading" id="6mf-z0-VkX"/>
+                                        <constraint firstItem="p4N-C9-z4q" firstAttribute="bottom" secondItem="bVg-GO-GeZ" secondAttribute="bottomMargin" id="8Rg-my-7Za"/>
                                         <constraint firstItem="AST-Ws-DbS" firstAttribute="leading" secondItem="bVg-GO-GeZ" secondAttribute="leadingMargin" id="PNa-ke-cCu"/>
-                                        <constraint firstItem="p4N-C9-z4q" firstAttribute="leading" secondItem="AST-Ws-DbS" secondAttribute="leading" id="n9F-ve-eiW"/>
+                                        <constraint firstItem="p4N-C9-z4q" firstAttribute="top" secondItem="AST-Ws-DbS" secondAttribute="bottom" constant="7" id="fNB-DD-6w2"/>
+                                        <constraint firstAttribute="trailing" secondItem="MWI-qe-DiJ" secondAttribute="trailing" constant="16" id="mul-Wc-1RQ"/>
+                                        <constraint firstItem="MWI-qe-DiJ" firstAttribute="centerY" secondItem="bVg-GO-GeZ" secondAttribute="centerY" id="qKl-Rv-KdW"/>
                                         <constraint firstItem="AST-Ws-DbS" firstAttribute="top" secondItem="bVg-GO-GeZ" secondAttribute="topMargin" id="uC9-jg-XdW"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="MWI-qe-DiJ" secondAttribute="trailing" constant="16" id="6os-a5-I0y"/>
-                                    <constraint firstItem="MWI-qe-DiJ" firstAttribute="centerY" secondItem="Mu3-Nr-TaM" secondAttribute="centerY" id="axs-RH-R1p"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="nameLabel" destination="AST-Ws-DbS" id="ooM-88-hUD"/>
                                     <outlet property="serialNumberLabel" destination="p4N-C9-z4q" id="h3U-8d-Zkw"/>
