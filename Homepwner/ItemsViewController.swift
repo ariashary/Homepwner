@@ -93,12 +93,6 @@ class ItemsViewController: UITableViewController {
             
             // Present the alert controller
             present(ac, animated: true, completion: nil)
-            
-            // Remove the item from the store
-            itemStore.removeItem(item)
-            
-            // Also remove that row from the table view with an animation
-            tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
     
